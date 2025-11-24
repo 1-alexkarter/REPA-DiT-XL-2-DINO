@@ -1,0 +1,24 @@
+# Core JAX stack – install jax[tpu] separately as described
+flax==0.10.2
+optax==0.2.4
+orbax-checkpoint==0.11.4
+tensorflow  # only if repo really needs it; otherwise you can drop it
+
+clu
+einops
+transformers
+timm
+
+ml_collections
+termcolor
+wandb
+webdataset
+
+google-api-core
+google-cloud-core
+google-cloud-storage
+
+# CPU-only PyTorch, needed only for DINO weight convert scripts etc.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1
+torchvision==0.20.1
